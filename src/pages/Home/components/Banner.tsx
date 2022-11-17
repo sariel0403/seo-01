@@ -1,6 +1,6 @@
 import React from "react";
 
-import "../../assets/css/banner.scss";
+import "./banner.scss";
 
 const Banner = () => {
   return (

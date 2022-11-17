@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import Switch from "react-switch";
 
-import useStore from "../../useStore";
+import useStore from "../../../useStore";
 
-import logo from "../../assets/image/logo.webp";
-import sun from "../../assets/image/sun.png";
-import moon from "../../assets/image/moon.png";
-import "../../assets/css/menu.scss";
+import logo from "../../../assets/image/logo.webp";
+import sun from "../../../assets/image/sun.png";
+import moon from "../../../assets/image/moon.png";
+import "./menu.scss";
 
 const Menu = () => {
   const [themeMode, setThemeMode] = useState("light");
@@ -25,7 +25,7 @@ const Menu = () => {
         <div className="inline">
           <label>
             <Switch
-              checked={themeMode === "light" ? true : false}
+              checked={themeMode === "light"}
               onChange={handleThemeModeChange}
               checkedIcon={<img src={sun} alt="sun" className="switch-icon" />}
               uncheckedIcon={

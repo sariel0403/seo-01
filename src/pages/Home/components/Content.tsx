@@ -1,10 +1,10 @@
 import React from "react";
 
-import useStore from "../../useStore";
+import useStore from "../../../useStore";
 
-import "../../assets/css/content.scss";
-import nearshore1 from "../../assets/image/nearshore-1.webp";
-import nearshore2 from "../../assets/image/nearshore-2.webp";
+import "./content.scss";
+import nearshore1 from "../../../assets/image/nearshore-2.webp";
+import nearshore2 from "../../../assets/image/nearshore-2.webp";
 
 const Content = () => {
   const { theme } = useStore();
@@ -72,6 +72,17 @@ const Content = () => {
           <h2>Increase your ROI compared to a full onshore team</h2>
           <h2>Focus on your core business and do more with an expert team</h2>
         </div>
+        <div>
+          <h1>How much will a nearshore technology team cost per month?</h1>
+          <h2>
+            Calculating how much setting up and running a nearshore software
+            development team is not that easy. There are many variables to keep
+            in mind. These variables come from your outsourcing strategy. If you
+            want a very rough approximation to calculate burn rate, this is a
+            quick tool to get you there.
+          </h2>
+        </div>
+        <div className="tool-btn vertical-center">Take me to the tool</div>
       </div>
     </div>
   );
